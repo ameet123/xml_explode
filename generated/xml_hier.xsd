@@ -1,0 +1,4017 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="QuotePolicyList" type="QuotePolicyListType"/>
+  <xs:complexType name="AnnualPremiumType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:float" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:float" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="BalanceToMinimumType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:byte" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="BinderFlagType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="BookingDateType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="BookingStatusType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="BookingUserType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CanWaivePremiumType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CommissionablePremiumType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:short" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:short" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CompanyCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CompanyNameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CompositeRatingType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ControlDateType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="oldValue"/>
+        <xs:attribute type="xs:dateTime" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CustomPackVersionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CustomPolicyNumberType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue"/>
+        <xs:attribute type="xs:int" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CustomRevisionNumberType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CEffectiveDateFlagType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CExpirationDateFlagType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CFullyEarnedType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="COpportunityIdType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue"/>
+        <xs:attribute type="xs:int" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CPaperTypeDescType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CPremCategoryType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CRenwlIndCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CTailDateFlagType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CTailDtType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="oldValue"/>
+        <xs:attribute type="xs:dateTime" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="DisplayPolicyNumberType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue"/>
+        <xs:attribute type="xs:int" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="EffectiveDateType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="oldValue"/>
+        <xs:attribute type="xs:dateTime" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ExpirationDateType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="oldValue"/>
+        <xs:attribute type="xs:dateTime" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="FullTermPremiumType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:short" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:short" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="IsComReductType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="IsCovManuallyRatedType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="IsCovProratedType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="IsRebindType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="IsRewriteType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="IsSubjectToAuditType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="MarketGroupDescriptionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="MarketSegmentCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="MasterQuoteType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="MicVersionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="NewEntityReferenceType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="NewEntityTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="NextGenAuditedType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="NoConflictOnRollfwdType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="OldEntityReferenceType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="OldEntityTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="OnDemandReorderType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="OoseVoidIndicatorType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="OrgEntityReferenceType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PaperTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PolicyNumberType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue"/>
+        <xs:attribute type="xs:int" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PolicyQuoteIndicatorType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ProductCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ProductNameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ProductVersionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="RateClickedType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="RatingModeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="RenewalType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="RenewalCounterType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="RenewalCounter2Type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="RenewalIndicatorType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="RetainBtmFltEndrType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="RevisionNumberType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="RiskStateType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="RiskStateStatCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:byte" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="SourceSystemType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TotalAnnualColFeeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TotalAnnualFeeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TotalAnnualSurchargeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TotalAnnualTaxType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TotalFtermColFeeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TotalFtermFeeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TotalFtermSurchargeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TotalFtermTaxesType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TotalSurchargeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TotalSurchargeFtermType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TotalTransSurchargeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TransactionActionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TransactionCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TransactionFactorType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TransactionPremiumType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:short" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:short" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TransAccountingDateType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TransAccountingMonthType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TransAccountingYearType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:short" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TransDisplayNameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TransEffectiveDateType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="oldValue"/>
+        <xs:attribute type="xs:dateTime" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TransPremNotSubToAudType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:short" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:short" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="UnderwriterCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:byte" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="UnderwriterNameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="WaivedPremiumType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:byte" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="WaivePremiumType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="WrittenPremiumType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:short" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AddressTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CityType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CountryType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CountryCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CountyType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CSkipAddVerifyType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="Line1Type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="StateCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="StateDescType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="SysExposureIsUnitsType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ZipCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="UnderWriterAddressType">
+    <xs:sequence>
+      <xs:element type="AddressTypeType" name="AddressType"/>
+      <xs:element type="CityType" name="City"/>
+      <xs:element type="CountryType" name="Country"/>
+      <xs:element type="CountryCodeType" name="CountryCode"/>
+      <xs:element type="CountyType" name="County"/>
+      <xs:element type="CSkipAddVerifyType" name="CSkipAddVerify"/>
+      <xs:element type="Line1Type" name="Line1"/>
+      <xs:element type="StateCodeType" name="StateCode"/>
+      <xs:element type="StateDescType" name="StateDesc"/>
+      <xs:element type="SysExposureIsUnitsType" name="SysExposureIsUnits"/>
+      <xs:element type="ZipCodeType" name="ZipCode"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated"/>
+    <xs:attribute type="xs:string" name="EntityReference"/>
+    <xs:attribute type="xs:string" name="EntityType"/>
+    <xs:attribute type="xs:int" name="Gid"/>
+    <xs:attribute type="xs:int" name="Id"/>
+    <xs:attribute type="xs:string" name="RefName"/>
+    <xs:attribute type="xs:int" name="RefValue"/>
+    <xs:attribute type="xs:string" name="UserCreated"/>
+  </xs:complexType>
+  <xs:complexType name="UnderWriterAddressListType">
+    <xs:sequence>
+      <xs:element type="UnderWriterAddressType" name="UnderWriterAddress"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EMailType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="UnderwriterContactType">
+    <xs:sequence>
+      <xs:element type="EMailType" name="EMail"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated"/>
+    <xs:attribute type="xs:string" name="EntityReference"/>
+    <xs:attribute type="xs:string" name="EntityType"/>
+    <xs:attribute type="xs:int" name="Gid"/>
+    <xs:attribute type="xs:int" name="Id"/>
+    <xs:attribute type="xs:string" name="RefName"/>
+    <xs:attribute type="xs:int" name="RefValue"/>
+    <xs:attribute type="xs:string" name="UserCreated"/>
+  </xs:complexType>
+  <xs:complexType name="UnderwriterContactListType">
+    <xs:sequence>
+      <xs:element type="UnderwriterContactType" name="UnderwriterContact"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PolicyUnderwriterType">
+    <xs:sequence>
+      <xs:element type="UnderwriterCodeType" name="UnderwriterCode"/>
+      <xs:element type="UnderwriterNameType" name="UnderwriterName"/>
+      <xs:element type="UnderWriterAddressListType" name="UnderWriterAddressList"/>
+      <xs:element type="UnderwriterContactListType" name="UnderwriterContactList"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated"/>
+    <xs:attribute type="xs:string" name="EntityReference"/>
+    <xs:attribute type="xs:string" name="EntityType"/>
+    <xs:attribute type="xs:int" name="Gid"/>
+    <xs:attribute type="xs:int" name="Id"/>
+    <xs:attribute type="xs:string" name="RefName"/>
+    <xs:attribute type="xs:int" name="RefValue"/>
+    <xs:attribute type="xs:string" name="UserCreated"/>
+  </xs:complexType>
+  <xs:complexType name="PolicyUnderwriterListType">
+    <xs:sequence>
+      <xs:element type="PolicyUnderwriterType" name="PolicyUnderwriter"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BusinessNameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CreateShellAccountType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CAddr1TypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CAddr2TypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CCompanyTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CCompClassCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CDateIncorporatedType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="oldValue"/>
+        <xs:attribute type="xs:dateTime" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CFormTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CFormTypeFlagType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CInsNamOfacCheckTimeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CIsoCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:short" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:short" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CIsoDescriptionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CLegalEntityCdType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CNaicDescriptionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CNyftzType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CNyftzClassCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="COfacCheckStatusType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="COfacCheckStatusMsgType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="COwnershipType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CPhoneTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CPolicyTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CPolIsoCounterType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CSicDescriptionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="DbNumberType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue"/>
+        <xs:attribute type="xs:int" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="FeinPhoneRequiredType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="IndRiskSituationType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="InsuredSearchCompleteType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="InsuredTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="InsuredTypeCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="IsDeregulatedType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="MasterRecordGidType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:int" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="NaicsCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue"/>
+        <xs:attribute type="xs:int" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="NameTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="NameTypeStatCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="OrderCreditScoreType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="QuoteNumberType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="RcFailureCancelType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="RetrieveQuoteNumberType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="SicCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:short" name="oldValue"/>
+        <xs:attribute type="xs:short" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CAddressStatusType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CInvalidAdrRsnType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CStdCityType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CStdCountryType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CStdLine1Type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CStdLine2Type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CStdStateCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CStdZipCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:short" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="Line2Type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AddressType">
+    <xs:sequence>
+      <xs:element type="AddressTypeType" name="AddressType"/>
+      <xs:element type="CityType" name="City"/>
+      <xs:element type="CountryType" name="Country"/>
+      <xs:element type="CountryCodeType" name="CountryCode"/>
+      <xs:element type="CountyType" name="County"/>
+      <xs:element type="CAddressStatusType" name="CAddressStatus" minOccurs="0"/>
+      <xs:element type="CInvalidAdrRsnType" name="CInvalidAdrRsn" minOccurs="0"/>
+      <xs:element type="CSkipAddVerifyType" name="CSkipAddVerify"/>
+      <xs:element type="CStdCityType" name="CStdCity" minOccurs="0"/>
+      <xs:element type="CStdCountryType" name="CStdCountry" minOccurs="0"/>
+      <xs:element type="CStdLine1Type" name="CStdLine1" minOccurs="0"/>
+      <xs:element type="CStdLine2Type" name="CStdLine2" minOccurs="0"/>
+      <xs:element type="CStdStateCodeType" name="CStdStateCode" minOccurs="0"/>
+      <xs:element type="CStdZipCodeType" name="CStdZipCode" minOccurs="0"/>
+      <xs:element type="Line1Type" name="Line1"/>
+      <xs:element type="Line2Type" name="Line2"/>
+      <xs:element type="MasterRecordGidType" name="MasterRecordGid" minOccurs="0"/>
+      <xs:element type="StateCodeType" name="StateCode"/>
+      <xs:element type="StateDescType" name="StateDesc"/>
+      <xs:element type="SysExposureIsUnitsType" name="SysExposureIsUnits"/>
+      <xs:element type="ZipCodeType" name="ZipCode"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated" use="optional"/>
+    <xs:attribute type="xs:dateTime" name="DateModified" use="optional"/>
+    <xs:attribute type="xs:string" name="EntityReference" use="optional"/>
+    <xs:attribute type="xs:string" name="EntityType" use="optional"/>
+    <xs:attribute type="xs:int" name="Gid" use="optional"/>
+    <xs:attribute type="xs:int" name="Id" use="optional"/>
+    <xs:attribute type="xs:string" name="RefName" use="optional"/>
+    <xs:attribute type="xs:int" name="RefValue" use="optional"/>
+    <xs:attribute type="xs:string" name="UserCreated" use="optional"/>
+    <xs:attribute type="xs:string" name="UserModified" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="AddressListType">
+    <xs:sequence>
+      <xs:element type="AddressType" name="Address"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ContactNameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ContactType">
+    <xs:sequence>
+      <xs:element type="ContactNameType" name="ContactName"/>
+      <xs:element type="MasterRecordGidType" name="MasterRecordGid" minOccurs="0"/>
+      <xs:element type="CContactCodeType" name="CContactCode" minOccurs="0"/>
+      <xs:element type="EMailType" name="EMail" minOccurs="0"/>
+      <xs:element type="Phone1Type" name="Phone1" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated" use="optional"/>
+    <xs:attribute type="xs:string" name="EntityReference" use="optional"/>
+    <xs:attribute type="xs:string" name="EntityType" use="optional"/>
+    <xs:attribute type="xs:int" name="Gid" use="optional"/>
+    <xs:attribute type="xs:int" name="Id" use="optional"/>
+    <xs:attribute type="xs:string" name="RefName" use="optional"/>
+    <xs:attribute type="xs:int" name="RefValue" use="optional"/>
+    <xs:attribute type="xs:string" name="UserCreated" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="ContactListType">
+    <xs:sequence>
+      <xs:element type="ContactType" name="Contact"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="InsuredType">
+    <xs:sequence>
+      <xs:element type="BusinessNameType" name="BusinessName"/>
+      <xs:element type="CreateShellAccountType" name="CreateShellAccount"/>
+      <xs:element type="CAddr1TypeType" name="CAddr1Type"/>
+      <xs:element type="CAddr2TypeType" name="CAddr2Type"/>
+      <xs:element type="CCompanyTypeType" name="CCompanyType"/>
+      <xs:element type="CCompClassCodeType" name="CCompClassCode"/>
+      <xs:element type="CDateIncorporatedType" name="CDateIncorporated"/>
+      <xs:element type="CFormTypeType" name="CFormType"/>
+      <xs:element type="CFormTypeFlagType" name="CFormTypeFlag"/>
+      <xs:element type="CInsNamOfacCheckTimeType" name="CInsNamOfacCheckTime"/>
+      <xs:element type="CIsoCodeType" name="CIsoCode"/>
+      <xs:element type="CIsoDescriptionType" name="CIsoDescription"/>
+      <xs:element type="CLegalEntityCdType" name="CLegalEntityCd"/>
+      <xs:element type="CNaicDescriptionType" name="CNaicDescription"/>
+      <xs:element type="CNyftzType" name="CNyftz"/>
+      <xs:element type="CNyftzClassCodeType" name="CNyftzClassCode"/>
+      <xs:element type="COfacCheckStatusType" name="COfacCheckStatus"/>
+      <xs:element type="COfacCheckStatusMsgType" name="COfacCheckStatusMsg"/>
+      <xs:element type="COwnershipType" name="COwnership"/>
+      <xs:element type="CPhoneTypeType" name="CPhoneType"/>
+      <xs:element type="CPolicyTypeType" name="CPolicyType"/>
+      <xs:element type="CPolIsoCounterType" name="CPolIsoCounter"/>
+      <xs:element type="CSicDescriptionType" name="CSicDescription"/>
+      <xs:element type="DbNumberType" name="DbNumber"/>
+      <xs:element type="FeinPhoneRequiredType" name="FeinPhoneRequired"/>
+      <xs:element type="IndRiskSituationType" name="IndRiskSituation"/>
+      <xs:element type="InsuredSearchCompleteType" name="InsuredSearchComplete"/>
+      <xs:element type="InsuredTypeType" name="InsuredType"/>
+      <xs:element type="InsuredTypeCodeType" name="InsuredTypeCode"/>
+      <xs:element type="IsDeregulatedType" name="IsDeregulated"/>
+      <xs:element type="MasterRecordGidType" name="MasterRecordGid"/>
+      <xs:element type="NaicsCodeType" name="NaicsCode"/>
+      <xs:element type="NameTypeType" name="NameType"/>
+      <xs:element type="NameTypeStatCodeType" name="NameTypeStatCode"/>
+      <xs:element type="OrderCreditScoreType" name="OrderCreditScore"/>
+      <xs:element type="QuoteNumberType" name="QuoteNumber"/>
+      <xs:element type="RcFailureCancelType" name="RcFailureCancel"/>
+      <xs:element type="RetrieveQuoteNumberType" name="RetrieveQuoteNumber"/>
+      <xs:element type="SicCodeType" name="SicCode"/>
+      <xs:element type="AddressListType" name="AddressList"/>
+      <xs:element type="ContactListType" name="ContactList"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated"/>
+    <xs:attribute type="xs:dateTime" name="DateModified"/>
+    <xs:attribute type="xs:string" name="EntityReference"/>
+    <xs:attribute type="xs:string" name="EntityType"/>
+    <xs:attribute type="xs:int" name="Gid"/>
+    <xs:attribute type="xs:int" name="Id"/>
+    <xs:attribute type="xs:string" name="RefName"/>
+    <xs:attribute type="xs:int" name="RefValue"/>
+    <xs:attribute type="xs:string" name="UserCreated"/>
+    <xs:attribute type="xs:string" name="UserModified"/>
+  </xs:complexType>
+  <xs:complexType name="InsuredListType">
+    <xs:sequence>
+      <xs:element type="InsuredType" name="Insured"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CommissionType" mixed="true">
+    <xs:sequence>
+      <xs:element type="IdType" name="Id" minOccurs="0"/>
+      <xs:element type="TypeType" name="Type" minOccurs="0"/>
+      <xs:element type="PolicyReferenceType" name="PolicyReference" minOccurs="0"/>
+      <xs:element type="ProducerCodeType" name="ProducerCode" minOccurs="0"/>
+      <xs:element type="CommPlanIdType" name="CommPlanId" minOccurs="0"/>
+      <xs:element type="CommPlanNameType" name="CommPlanName" minOccurs="0"/>
+      <xs:element type="CommPlanDescType" name="CommPlanDesc" minOccurs="0"/>
+      <xs:element type="CommPlanCommType" name="CommPlanComm" minOccurs="0"/>
+      <xs:element type="IsCommPlanPercentType" name="IsCommPlanPercent" minOccurs="0"/>
+      <xs:element type="CommissionType" name="Commission" minOccurs="0"/>
+      <xs:element type="NetCommissionType" name="NetCommission" minOccurs="0"/>
+      <xs:element type="IsCommPlanTiredType" name="IsCommPlanTired" minOccurs="0"/>
+      <xs:element type="DateCreatedType" name="DateCreated" minOccurs="0"/>
+      <xs:element type="UserCreatedType" name="UserCreated" minOccurs="0"/>
+      <xs:element type="DateModifiedType" name="DateModified" minOccurs="0"/>
+      <xs:element type="UserModifiedType" name="UserModified" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:float" name="oldValue" use="optional"/>
+    <xs:attribute type="xs:float" name="value" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="CAgencyPhoneType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CIsBrokerProducerSameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CLicenseCheckTimeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CPhysicalAddressIdType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="DirectBillIndicatorType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="DisplayProducerCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue"/>
+        <xs:attribute type="xs:int" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="DistinguishedFieldUwType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="GoodStandingType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="NameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PrimaryType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ProducerCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:int" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ProducerOfRecordType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="SurplusLinesType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CIsProdSelectedType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PRODUCER_PHYSICAL_ADDType">
+    <xs:sequence>
+      <xs:element type="AddressTypeType" name="AddressType"/>
+      <xs:element type="CityType" name="City"/>
+      <xs:element type="CountryType" name="Country"/>
+      <xs:element type="CountryCodeType" name="CountryCode"/>
+      <xs:element type="CountyType" name="County"/>
+      <xs:element type="CIsProdSelectedType" name="CIsProdSelected"/>
+      <xs:element type="CSkipAddVerifyType" name="CSkipAddVerify"/>
+      <xs:element type="Line1Type" name="Line1"/>
+      <xs:element type="Line2Type" name="Line2"/>
+      <xs:element type="StateCodeType" name="StateCode"/>
+      <xs:element type="SysExposureIsUnitsType" name="SysExposureIsUnits"/>
+      <xs:element type="ZipCodeType" name="ZipCode"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated"/>
+    <xs:attribute type="xs:string" name="EntityReference"/>
+    <xs:attribute type="xs:string" name="EntityType"/>
+    <xs:attribute type="xs:int" name="Gid"/>
+    <xs:attribute type="xs:int" name="Id"/>
+    <xs:attribute type="xs:string" name="RefName"/>
+    <xs:attribute type="xs:int" name="RefValue"/>
+    <xs:attribute type="xs:string" name="UserCreated"/>
+  </xs:complexType>
+  <xs:complexType name="PRODUCER_PHYSICAL_ADDListType">
+    <xs:sequence>
+      <xs:element type="PRODUCER_PHYSICAL_ADDType" name="PRODUCER_PHYSICAL_ADD"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CContactCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue"/>
+        <xs:attribute type="xs:int" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="Phone1Type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CIsBrokerSameProducerType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="BROKER_CONTACTType">
+    <xs:sequence>
+      <xs:element type="ContactNameType" name="ContactName"/>
+      <xs:element type="CIsBrokerSameProducerType" name="CIsBrokerSameProducer"/>
+      <xs:element type="EMailType" name="EMail"/>
+      <xs:element type="Phone1Type" name="Phone1"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated"/>
+    <xs:attribute type="xs:string" name="EntityReference"/>
+    <xs:attribute type="xs:string" name="EntityType"/>
+    <xs:attribute type="xs:int" name="Gid"/>
+    <xs:attribute type="xs:int" name="Id"/>
+    <xs:attribute type="xs:string" name="RefName"/>
+    <xs:attribute type="xs:int" name="RefValue"/>
+    <xs:attribute type="xs:string" name="UserCreated"/>
+  </xs:complexType>
+  <xs:complexType name="BROKER_CONTACTListType">
+    <xs:sequence>
+      <xs:element type="BROKER_CONTACTType" name="BROKER_CONTACT"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProducerType">
+    <xs:sequence>
+      <xs:element type="CommissionType" name="Commission"/>
+      <xs:element type="CAgencyPhoneType" name="CAgencyPhone"/>
+      <xs:element type="CIsBrokerProducerSameType" name="CIsBrokerProducerSame"/>
+      <xs:element type="CLicenseCheckTimeType" name="CLicenseCheckTime"/>
+      <xs:element type="CPhysicalAddressIdType" name="CPhysicalAddressId"/>
+      <xs:element type="DirectBillIndicatorType" name="DirectBillIndicator"/>
+      <xs:element type="DisplayProducerCodeType" name="DisplayProducerCode"/>
+      <xs:element type="DistinguishedFieldUwType" name="DistinguishedFieldUw"/>
+      <xs:element type="GoodStandingType" name="GoodStanding"/>
+      <xs:element type="NameType" name="Name"/>
+      <xs:element type="PrimaryType" name="Primary"/>
+      <xs:element type="ProducerCodeType" name="ProducerCode"/>
+      <xs:element type="ProducerOfRecordType" name="ProducerOfRecord"/>
+      <xs:element type="SurplusLinesType" name="SurplusLines"/>
+      <xs:element type="PRODUCER_PHYSICAL_ADDListType" name="PRODUCER_PHYSICAL_ADDList"/>
+      <xs:element type="ContactListType" name="ContactList"/>
+      <xs:element type="AddressListType" name="AddressList"/>
+      <xs:element type="BROKER_CONTACTListType" name="BROKER_CONTACTList"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated"/>
+    <xs:attribute type="xs:dateTime" name="DateModified"/>
+    <xs:attribute type="xs:string" name="EntityReference"/>
+    <xs:attribute type="xs:string" name="EntityType"/>
+    <xs:attribute type="xs:int" name="Gid"/>
+    <xs:attribute type="xs:int" name="Id"/>
+    <xs:attribute type="xs:string" name="RefName"/>
+    <xs:attribute type="xs:int" name="RefValue"/>
+    <xs:attribute type="xs:string" name="UserCreated"/>
+    <xs:attribute type="xs:string" name="UserModified"/>
+  </xs:complexType>
+  <xs:complexType name="ProducerListType">
+    <xs:sequence>
+      <xs:element type="ProducerType" name="Producer"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CAttentionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CCompanyType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CEmailType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CHomeOfficeCityType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CHomeOfficePhoneType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CHomeOfficeStateType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CHomeOfficeZipType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:int" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="COfficeNameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="COfficeTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CPresidentNameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CSecretaryNameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CStreet1Type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CUniqueKeyType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="QBPolicyDynamicFormDataType">
+    <xs:sequence>
+      <xs:element type="CAttentionType" name="CAttention" minOccurs="0"/>
+      <xs:element type="CBuildingType" name="CBuilding" minOccurs="0"/>
+      <xs:element type="CCompanyType" name="CCompany" minOccurs="0"/>
+      <xs:element type="CEmailType" name="CEmail" minOccurs="0"/>
+      <xs:element type="CHomeOfficeCityType" name="CHomeOfficeCity" minOccurs="0"/>
+      <xs:element type="CHomeOfficePhoneType" name="CHomeOfficePhone" minOccurs="0"/>
+      <xs:element type="CHomeOfficeStateType" name="CHomeOfficeState" minOccurs="0"/>
+      <xs:element type="CHomeOfficeZipType" name="CHomeOfficeZip" minOccurs="0"/>
+      <xs:element type="COfficeNameType" name="COfficeName" minOccurs="0"/>
+      <xs:element type="COfficeTypeType" name="COfficeType"/>
+      <xs:element type="CPresidentNameType" name="CPresidentName"/>
+      <xs:element type="CSecretaryNameType" name="CSecretaryName"/>
+      <xs:element type="CStreet1Type" name="CStreet1" minOccurs="0"/>
+      <xs:element type="CStreet2Type" name="CStreet2" minOccurs="0"/>
+      <xs:element type="CUniqueKeyType" name="CUniqueKey"/>
+      <xs:element type="CWebsiteType" name="CWebsite" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated" use="optional"/>
+    <xs:attribute type="xs:string" name="EntityReference" use="optional"/>
+    <xs:attribute type="xs:string" name="EntityStatus" use="optional"/>
+    <xs:attribute type="xs:string" name="EntityType" use="optional"/>
+    <xs:attribute type="xs:int" name="Gid" use="optional"/>
+    <xs:attribute type="xs:int" name="Id" use="optional"/>
+    <xs:attribute type="xs:string" name="RefName" use="optional"/>
+    <xs:attribute type="xs:int" name="RefValue" use="optional"/>
+    <xs:attribute type="xs:string" name="UserCreated" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="CStreet2Type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CWebsiteType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CBuildingType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="QBPolicyDynamicFormDataListType">
+    <xs:sequence>
+      <xs:element type="QBPolicyDynamicFormDataType" name="QBPolicyDynamicFormData" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CAggregateLmtType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue"/>
+        <xs:attribute type="xs:int" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CCovAggLimitType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue"/>
+        <xs:attribute type="xs:int" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CCovProfAggLimitType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue"/>
+        <xs:attribute type="xs:int" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CCovSelOverPpDateType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="oldValue"/>
+        <xs:attribute type="xs:dateTime" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CCovSelRetroDateType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="oldValue"/>
+        <xs:attribute type="xs:dateTime" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CErpPerOfAnnPremType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CExtReportingPeriodType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CFullyEarnedSumType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CHasLobCcType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CHasLobClType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CHasLobDoType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CHasLobEpType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CHasLobFbType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CHasLobFdType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CHasLobFiType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CHasLobMdType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CHasLobMlType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CHasLobPnType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CHasLobTcType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CIsOverrideDefaultsType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CLimitTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CLobDateDesForResetType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CMlplPolicyTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CPendingOrProceedDateType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="oldValue"/>
+        <xs:attribute type="xs:dateTime" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CPrimaryCovForRateType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CProfAggLmtType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue"/>
+        <xs:attribute type="xs:int" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CRetroDateType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="oldValue"/>
+        <xs:attribute type="xs:dateTime" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CSeparateOrSharedLmtType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CStateCodeOfDomicileType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CStateDescOfDomicileType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="LobCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="LobDescriptionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="SortOrderType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:byte" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="MLPLLinesOfBusinessType">
+    <xs:sequence>
+      <xs:element type="AruType" name="Aru" minOccurs="0"/>
+      <xs:element type="AuditIncludedType" name="AuditIncluded" minOccurs="0"/>
+      <xs:element type="CompositeRateIncludedType" name="CompositeRateIncluded" minOccurs="0"/>
+      <xs:element type="CSelectedLobLimitType" name="CSelectedLobLimit" minOccurs="0"/>
+      <xs:element type="CSelectedLobRetentionType" name="CSelectedLobRetention" minOccurs="0"/>
+      <xs:element type="CSelectionLobFlagType" name="CSelectionLobFlag" minOccurs="0"/>
+      <xs:element type="LobCodeType" name="LobCode"/>
+      <xs:element type="LobDescriptionType" name="LobDescription"/>
+      <xs:element type="LobIncludedType" name="LobIncluded" minOccurs="0"/>
+      <xs:element type="SortOrderType" name="SortOrder"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated" use="optional"/>
+    <xs:attribute type="xs:string" name="EntityReference" use="optional"/>
+    <xs:attribute type="xs:string" name="EntityStatus" use="optional"/>
+    <xs:attribute type="xs:string" name="EntityType" use="optional"/>
+    <xs:attribute type="xs:int" name="Gid" use="optional"/>
+    <xs:attribute type="xs:int" name="Id" use="optional"/>
+    <xs:attribute type="xs:string" name="RefName" use="optional"/>
+    <xs:attribute type="xs:int" name="RefValue" use="optional"/>
+    <xs:attribute type="xs:string" name="UserCreated" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="AruType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AuditIncludedType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CompositeRateIncludedType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CSelectedLobLimitType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue"/>
+        <xs:attribute type="xs:int" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CSelectedLobRetentionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue"/>
+        <xs:attribute type="xs:int" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CSelectionLobFlagType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="LobIncludedType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="MLPLLinesOfBusinessListType">
+    <xs:sequence>
+      <xs:element type="MLPLLinesOfBusinessType" name="MLPLLinesOfBusiness" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CRevenueType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:int" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="MLPLGeneralInformationType">
+    <xs:sequence>
+      <xs:element type="CRevenueType" name="CRevenue"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated"/>
+    <xs:attribute type="xs:string" name="EntityReference"/>
+    <xs:attribute type="xs:string" name="EntityType"/>
+    <xs:attribute type="xs:int" name="Gid"/>
+    <xs:attribute type="xs:int" name="Id"/>
+    <xs:attribute type="xs:string" name="RefName"/>
+    <xs:attribute type="xs:int" name="RefValue"/>
+    <xs:attribute type="xs:string" name="UserCreated"/>
+  </xs:complexType>
+  <xs:complexType name="MLPLGeneralInformationListType">
+    <xs:sequence>
+      <xs:element type="MLPLGeneralInformationType" name="MLPLGeneralInformation"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CExposureBaseType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CRiskModifierTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CEffectiveDateType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="oldValue"/>
+        <xs:attribute type="xs:dateTime" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CExpirationDateType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="oldValue"/>
+        <xs:attribute type="xs:dateTime" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CExpoOccuClaimsMadeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CHeaderInsuredInfoType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CLimitType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:int" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CLobIsoCounterType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="COwnershipTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CPaperTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CRetentionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:int" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CStateOfDomicileType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="MDHeaderInformationType">
+    <xs:sequence>
+      <xs:element type="CCompanyTypeType" name="CCompanyType"/>
+      <xs:element type="CEffectiveDateType" name="CEffectiveDate"/>
+      <xs:element type="CExpirationDateType" name="CExpirationDate"/>
+      <xs:element type="CExpoOccuClaimsMadeType" name="CExpoOccuClaimsMade"/>
+      <xs:element type="CHeaderInsuredInfoType" name="CHeaderInsuredInfo"/>
+      <xs:element type="CIsoCodeType" name="CIsoCode"/>
+      <xs:element type="CIsoDescriptionType" name="CIsoDescription"/>
+      <xs:element type="CLimitType" name="CLimit"/>
+      <xs:element type="CLobIsoCounterType" name="CLobIsoCounter"/>
+      <xs:element type="COwnershipTypeType" name="COwnershipType"/>
+      <xs:element type="CPaperTypeType" name="CPaperType"/>
+      <xs:element type="CPolicyTypeType" name="CPolicyType"/>
+      <xs:element type="CRetentionType" name="CRetention"/>
+      <xs:element type="CStateOfDomicileType" name="CStateOfDomicile"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated"/>
+    <xs:attribute type="xs:string" name="EntityReference"/>
+    <xs:attribute type="xs:string" name="EntityType"/>
+    <xs:attribute type="xs:int" name="Gid"/>
+    <xs:attribute type="xs:int" name="Id"/>
+    <xs:attribute type="xs:string" name="RefName"/>
+    <xs:attribute type="xs:short" name="RefValue"/>
+    <xs:attribute type="xs:string" name="UserCreated"/>
+  </xs:complexType>
+  <xs:complexType name="MDHeaderInformationListType">
+    <xs:sequence>
+      <xs:element type="MDHeaderInformationType" name="MDHeaderInformation"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CExposureInfoType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CGenInfoRevenueType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue"/>
+        <xs:attribute type="xs:int" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="COccurrOrClaimsMadeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CResetDefaultsOnDateType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CScheduledMediaType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CTypeOfMediaType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="MDExposureInformationType">
+    <xs:sequence>
+      <xs:element type="CExposureInfoType" name="CExposureInfo"/>
+      <xs:element type="CGenInfoRevenueType" name="CGenInfoRevenue"/>
+      <xs:element type="COccurrOrClaimsMadeType" name="COccurrOrClaimsMade"/>
+      <xs:element type="CResetDefaultsOnDateType" name="CResetDefaultsOnDate"/>
+      <xs:element type="CRevenueType" name="CRevenue"/>
+      <xs:element type="CScheduledMediaType" name="CScheduledMedia"/>
+      <xs:element type="CTypeOfMediaType" name="CTypeOfMedia"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated"/>
+    <xs:attribute type="xs:string" name="EntityReference"/>
+    <xs:attribute type="xs:string" name="EntityType"/>
+    <xs:attribute type="xs:int" name="Gid"/>
+    <xs:attribute type="xs:int" name="Id"/>
+    <xs:attribute type="xs:string" name="RefName"/>
+    <xs:attribute type="xs:short" name="RefValue"/>
+    <xs:attribute type="xs:string" name="UserCreated"/>
+  </xs:complexType>
+  <xs:complexType name="MDExposureInformationListType">
+    <xs:sequence>
+      <xs:element type="MDExposureInformationType" name="MDExposureInformation"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CCharecteristicTypeUkType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CCharMinMaxTwistyType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CDisplayTotalType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:float" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:float" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CHeaderType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CLobCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CLobPaperTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CRiskCharDateResetType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CTotalType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:float" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:float" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CCharactersticsType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CDefaultsType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:float" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:float" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CDescriptionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CDesSortOrderType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:byte" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CFinalFactorType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:float" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:float" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CMaxFactorType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:float" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:float" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CMinFactorType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:float" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:float" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CRiskCategoryType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CRiskCharacteristicsUkType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CharactersticsMinMaxDetailsType">
+    <xs:sequence>
+      <xs:element type="CCharactersticsType" name="CCharacterstics"/>
+      <xs:element type="CDefaultsType" name="CDefaults" minOccurs="0"/>
+      <xs:element type="CDescriptionType" name="CDescription" minOccurs="0"/>
+      <xs:element type="CDesSortOrderType" name="CDesSortOrder"/>
+      <xs:element type="CExpoTypeOfMediaType" name="CExpoTypeOfMedia" minOccurs="0"/>
+      <xs:element type="CFinalFactorType" name="CFinalFactor" minOccurs="0"/>
+      <xs:element type="CLobSelLobTypeType" name="CLobSelLobType" minOccurs="0"/>
+      <xs:element type="CMaxFactorType" name="CMaxFactor" minOccurs="0"/>
+      <xs:element type="CMinFactorType" name="CMinFactor" minOccurs="0"/>
+      <xs:element type="CResetDefaultsOnDateType" name="CResetDefaultsOnDate" minOccurs="0"/>
+      <xs:element type="CRiskCategoryType" name="CRiskCategory"/>
+      <xs:element type="CRiskCharacteristicsUkType" name="CRiskCharacteristicsUk"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated" use="optional"/>
+    <xs:attribute type="xs:string" name="EntityReference" use="optional"/>
+    <xs:attribute type="xs:string" name="EntityStatus" use="optional"/>
+    <xs:attribute type="xs:string" name="EntityType" use="optional"/>
+    <xs:attribute type="xs:int" name="Gid" use="optional"/>
+    <xs:attribute type="xs:int" name="Id" use="optional"/>
+    <xs:attribute type="xs:string" name="RefName" use="optional"/>
+    <xs:attribute type="xs:int" name="RefValue" use="optional"/>
+    <xs:attribute type="xs:string" name="UserCreated" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="CLobSelLobTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CExpoTypeOfMediaType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CharactersticsMinMaxDetailsListType">
+    <xs:sequence>
+      <xs:element type="CharactersticsMinMaxDetailsType" name="CharactersticsMinMaxDetails" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MDRiskModifierType">
+    <xs:sequence>
+      <xs:element type="CCharecteristicTypeUkType" name="CCharecteristicTypeUk"/>
+      <xs:element type="CCharMinMaxTwistyType" name="CCharMinMaxTwisty"/>
+      <xs:element type="CDisplayTotalType" name="CDisplayTotal"/>
+      <xs:element type="CHeaderType" name="CHeader"/>
+      <xs:element type="CLobCodeType" name="CLobCode"/>
+      <xs:element type="CLobPaperTypeType" name="CLobPaperType"/>
+      <xs:element type="CRiskCharDateResetType" name="CRiskCharDateReset"/>
+      <xs:element type="CTotalType" name="CTotal"/>
+      <xs:element type="CharactersticsMinMaxDetailsListType" name="CharactersticsMinMaxDetailsList"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated"/>
+    <xs:attribute type="xs:string" name="EntityReference"/>
+    <xs:attribute type="xs:string" name="EntityType"/>
+    <xs:attribute type="xs:int" name="Gid"/>
+    <xs:attribute type="xs:int" name="Id"/>
+    <xs:attribute type="xs:string" name="RefName"/>
+    <xs:attribute type="xs:short" name="RefValue"/>
+    <xs:attribute type="xs:string" name="UserCreated"/>
+  </xs:complexType>
+  <xs:complexType name="MDRiskModifierListType">
+    <xs:sequence>
+      <xs:element type="MDRiskModifierType" name="MDRiskModifier"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MDRiskCharacteristicsNonFinancialType">
+    <xs:sequence>
+      <xs:element type="CCharecteristicTypeUkType" name="CCharecteristicTypeUk"/>
+      <xs:element type="CCharMinMaxTwistyType" name="CCharMinMaxTwisty"/>
+      <xs:element type="CDisplayTotalType" name="CDisplayTotal"/>
+      <xs:element type="CHeaderType" name="CHeader"/>
+      <xs:element type="CLobCodeType" name="CLobCode"/>
+      <xs:element type="CLobPaperTypeType" name="CLobPaperType"/>
+      <xs:element type="CRiskCharDateResetType" name="CRiskCharDateReset"/>
+      <xs:element type="CTotalType" name="CTotal"/>
+      <xs:element type="CharactersticsMinMaxDetailsListType" name="CharactersticsMinMaxDetailsList"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated"/>
+    <xs:attribute type="xs:string" name="EntityReference"/>
+    <xs:attribute type="xs:string" name="EntityType"/>
+    <xs:attribute type="xs:int" name="Gid"/>
+    <xs:attribute type="xs:int" name="Id"/>
+    <xs:attribute type="xs:string" name="RefName"/>
+    <xs:attribute type="xs:short" name="RefValue"/>
+    <xs:attribute type="xs:string" name="UserCreated"/>
+  </xs:complexType>
+  <xs:complexType name="MDRiskCharacteristicsNonFinancialListType">
+    <xs:sequence>
+      <xs:element type="MDRiskCharacteristicsNonFinancialType" name="MDRiskCharacteristicsNonFinancial"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MDFinancialAnalysisType">
+    <xs:sequence>
+      <xs:element type="CCharecteristicTypeUkType" name="CCharecteristicTypeUk"/>
+      <xs:element type="CCharMinMaxTwistyType" name="CCharMinMaxTwisty"/>
+      <xs:element type="CDisplayTotalType" name="CDisplayTotal"/>
+      <xs:element type="CHeaderType" name="CHeader"/>
+      <xs:element type="CLobCodeType" name="CLobCode"/>
+      <xs:element type="CLobPaperTypeType" name="CLobPaperType"/>
+      <xs:element type="CRiskCharDateResetType" name="CRiskCharDateReset"/>
+      <xs:element type="CTotalType" name="CTotal"/>
+      <xs:element type="CharactersticsMinMaxDetailsListType" name="CharactersticsMinMaxDetailsList"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated"/>
+    <xs:attribute type="xs:string" name="EntityReference"/>
+    <xs:attribute type="xs:string" name="EntityType"/>
+    <xs:attribute type="xs:int" name="Gid"/>
+    <xs:attribute type="xs:int" name="Id"/>
+    <xs:attribute type="xs:string" name="RefName"/>
+    <xs:attribute type="xs:short" name="RefValue"/>
+    <xs:attribute type="xs:string" name="UserCreated"/>
+  </xs:complexType>
+  <xs:complexType name="MDFinancialAnalysisListType">
+    <xs:sequence>
+      <xs:element type="MDFinancialAnalysisType" name="MDFinancialAnalysis"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CCappedTotalType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CDisplayCapTotalType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="MDScheduleRatingType">
+    <xs:sequence>
+      <xs:element type="CCappedTotalType" name="CCappedTotal"/>
+      <xs:element type="CCharecteristicTypeUkType" name="CCharecteristicTypeUk"/>
+      <xs:element type="CCharMinMaxTwistyType" name="CCharMinMaxTwisty"/>
+      <xs:element type="CDisplayCapTotalType" name="CDisplayCapTotal"/>
+      <xs:element type="CDisplayTotalType" name="CDisplayTotal"/>
+      <xs:element type="CHeaderType" name="CHeader"/>
+      <xs:element type="CLobCodeType" name="CLobCode"/>
+      <xs:element type="CLobPaperTypeType" name="CLobPaperType"/>
+      <xs:element type="CRiskCharDateResetType" name="CRiskCharDateReset"/>
+      <xs:element type="CTotalType" name="CTotal"/>
+      <xs:element type="CharactersticsMinMaxDetailsListType" name="CharactersticsMinMaxDetailsList"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated"/>
+    <xs:attribute type="xs:string" name="EntityReference"/>
+    <xs:attribute type="xs:string" name="EntityType"/>
+    <xs:attribute type="xs:int" name="Gid"/>
+    <xs:attribute type="xs:int" name="Id"/>
+    <xs:attribute type="xs:string" name="RefName"/>
+    <xs:attribute type="xs:short" name="RefValue"/>
+    <xs:attribute type="xs:string" name="UserCreated"/>
+  </xs:complexType>
+  <xs:complexType name="MDScheduleRatingListType">
+    <xs:sequence>
+      <xs:element type="MDScheduleRatingType" name="MDScheduleRating"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MDSignificantTermsAndConditionAdditonalCoverageType">
+    <xs:sequence>
+      <xs:element type="CCharecteristicTypeUkType" name="CCharecteristicTypeUk"/>
+      <xs:element type="CCharMinMaxTwistyType" name="CCharMinMaxTwisty"/>
+      <xs:element type="CDisplayTotalType" name="CDisplayTotal"/>
+      <xs:element type="CHeaderType" name="CHeader"/>
+      <xs:element type="CLobCodeType" name="CLobCode"/>
+      <xs:element type="CLobPaperTypeType" name="CLobPaperType"/>
+      <xs:element type="CRiskCharDateResetType" name="CRiskCharDateReset"/>
+      <xs:element type="CTotalType" name="CTotal"/>
+      <xs:element type="CharactersticsMinMaxDetailsListType" name="CharactersticsMinMaxDetailsList"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated"/>
+    <xs:attribute type="xs:string" name="EntityReference"/>
+    <xs:attribute type="xs:string" name="EntityType"/>
+    <xs:attribute type="xs:int" name="Gid"/>
+    <xs:attribute type="xs:int" name="Id"/>
+    <xs:attribute type="xs:string" name="RefName"/>
+    <xs:attribute type="xs:short" name="RefValue"/>
+    <xs:attribute type="xs:string" name="UserCreated"/>
+  </xs:complexType>
+  <xs:complexType name="MDSignificantTermsAndConditionAdditonalCoverageListType">
+    <xs:sequence>
+      <xs:element type="MDSignificantTermsAndConditionAdditonalCoverageType" name="MDSignificantTermsAndConditionAdditonalCoverage"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CCovStructTwistyType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CCovStrDateResetType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CAslobType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:short" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:short" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CCoverageType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CCoverageStructureUkType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CCoverageTypeCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CCoverageTypeNameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CCovCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CCovSelectionLimitType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:int" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CCovSelectionRetType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:int" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CSortOrderType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:byte" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CSubLineCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:short" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:short" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CoverageStructureDetailsType">
+    <xs:sequence>
+      <xs:element type="CAslobType" name="CAslob" minOccurs="0"/>
+      <xs:element type="CCoverageType" name="CCoverage"/>
+      <xs:element type="CCoverageStructureUkType" name="CCoverageStructureUk"/>
+      <xs:element type="CCoverageTypeCodeType" name="CCoverageTypeCode" minOccurs="0"/>
+      <xs:element type="CCoverageTypeNameType" name="CCoverageTypeName" minOccurs="0"/>
+      <xs:element type="CCovCodeType" name="CCovCode"/>
+      <xs:element type="CCovSelectionLimitType" name="CCovSelectionLimit" minOccurs="0"/>
+      <xs:element type="CCovSelectionRetType" name="CCovSelectionRet" minOccurs="0"/>
+      <xs:element type="CLimitType" name="CLimit" minOccurs="0"/>
+      <xs:element type="CLimitModifyFlagType" name="CLimitModifyFlag" minOccurs="0"/>
+      <xs:element type="CLobCodeType" name="CLobCode"/>
+      <xs:element type="CResetDefaultsOnDateType" name="CResetDefaultsOnDate"/>
+      <xs:element type="CRetentionType" name="CRetention" minOccurs="0"/>
+      <xs:element type="CSortOrderType" name="CSortOrder"/>
+      <xs:element type="CSubLineCodeType" name="CSubLineCode" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated" use="optional"/>
+    <xs:attribute type="xs:string" name="EntityReference" use="optional"/>
+    <xs:attribute type="xs:string" name="EntityStatus" use="optional"/>
+    <xs:attribute type="xs:string" name="EntityType" use="optional"/>
+    <xs:attribute type="xs:int" name="Gid" use="optional"/>
+    <xs:attribute type="xs:int" name="Id" use="optional"/>
+    <xs:attribute type="xs:string" name="RefName" use="optional"/>
+    <xs:attribute type="xs:int" name="RefValue" use="optional"/>
+    <xs:attribute type="xs:string" name="UserCreated" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="CLimitModifyFlagType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CoverageStructureDetailsListType">
+    <xs:sequence>
+      <xs:element type="CoverageStructureDetailsType" name="CoverageStructureDetails" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MDCoverageStructureType">
+    <xs:sequence>
+      <xs:element type="CCovStructTwistyType" name="CCovStructTwisty"/>
+      <xs:element type="CCovStrDateResetType" name="CCovStrDateReset"/>
+      <xs:element type="CoverageStructureDetailsListType" name="CoverageStructureDetailsList"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated"/>
+    <xs:attribute type="xs:string" name="EntityReference"/>
+    <xs:attribute type="xs:string" name="EntityType"/>
+    <xs:attribute type="xs:int" name="Gid"/>
+    <xs:attribute type="xs:int" name="Id"/>
+    <xs:attribute type="xs:string" name="RefName"/>
+    <xs:attribute type="xs:short" name="RefValue"/>
+    <xs:attribute type="xs:string" name="UserCreated"/>
+  </xs:complexType>
+  <xs:complexType name="MDCoverageStructureListType">
+    <xs:sequence>
+      <xs:element type="MDCoverageStructureType" name="MDCoverageStructure"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CRatingDetailTwistyType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CCurrentType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:float" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:float" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CCurrentFormulaType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CDisplayCurrentType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:float" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:float" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CRateItemType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CRatingDetailsUkType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CRatingDtlItemCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="RatingDetailsType">
+    <xs:sequence>
+      <xs:element type="CCurrentType" name="CCurrent"/>
+      <xs:element type="CCurrentFormulaType" name="CCurrentFormula"/>
+      <xs:element type="CDisplayCurrentType" name="CDisplayCurrent"/>
+      <xs:element type="CLobCodeType" name="CLobCode"/>
+      <xs:element type="CRateItemType" name="CRateItem"/>
+      <xs:element type="CRatingDetailsUkType" name="CRatingDetailsUk"/>
+      <xs:element type="CRatingDtlItemCodeType" name="CRatingDtlItemCode"/>
+      <xs:element type="CSortOrderType" name="CSortOrder"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated" use="optional"/>
+    <xs:attribute type="xs:string" name="EntityReference" use="optional"/>
+    <xs:attribute type="xs:string" name="EntityStatus" use="optional"/>
+    <xs:attribute type="xs:string" name="EntityType" use="optional"/>
+    <xs:attribute type="xs:int" name="Gid" use="optional"/>
+    <xs:attribute type="xs:int" name="Id" use="optional"/>
+    <xs:attribute type="xs:string" name="RefName" use="optional"/>
+    <xs:attribute type="xs:int" name="RefValue" use="optional"/>
+    <xs:attribute type="xs:string" name="UserCreated" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="RatingDetailsListType">
+    <xs:sequence>
+      <xs:element type="RatingDetailsType" name="RatingDetails" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MDRatingDetailsType">
+    <xs:sequence>
+      <xs:element type="CRatingDetailTwistyType" name="CRatingDetailTwisty"/>
+      <xs:element type="RatingDetailsListType" name="RatingDetailsList"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated"/>
+    <xs:attribute type="xs:string" name="EntityReference"/>
+    <xs:attribute type="xs:string" name="EntityType"/>
+    <xs:attribute type="xs:int" name="Gid"/>
+    <xs:attribute type="xs:int" name="Id"/>
+    <xs:attribute type="xs:string" name="RefName"/>
+    <xs:attribute type="xs:short" name="RefValue"/>
+    <xs:attribute type="xs:string" name="UserCreated"/>
+  </xs:complexType>
+  <xs:complexType name="MDRatingDetailsListType">
+    <xs:sequence>
+      <xs:element type="MDRatingDetailsType" name="MDRatingDetails"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CCoverageCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CCoveragePartCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CCoveragePartNameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CDesType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CDevFrmSchdledExcessType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CDevFrmSchdledPrimaryType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CDevFrmSchPrimDispType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CFinalPremiumType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:float" name="oldValue"/>
+        <xs:attribute type="xs:float" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CFinalPremDispType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:short" name="oldValue"/>
+        <xs:attribute type="xs:short" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CFullyEarnedOverrideType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CLobDescriptionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CManualPremType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:float" name="oldValue"/>
+        <xs:attribute type="xs:float" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CManualPremDispType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:short" name="oldValue"/>
+        <xs:attribute type="xs:short" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CPrsDetailTwistyType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CPublicQbeEquPremType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CPubQbeEquPremDispType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CRatedPremType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:float" name="oldValue"/>
+        <xs:attribute type="xs:float" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CRatedPremDispType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:short" name="oldValue"/>
+        <xs:attribute type="xs:short" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CRatingFormulaType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CRatingFunctionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CSeqType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="IsSubToFullyChargeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="IsSubToFullyEarnType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="MDPremiumSummaryDetailType">
+    <xs:sequence>
+      <xs:element type="AnnualPremiumType" name="AnnualPremium"/>
+      <xs:element type="BalanceToMinimumType" name="BalanceToMinimum"/>
+      <xs:element type="CommissionablePremiumType" name="CommissionablePremium"/>
+      <xs:element type="CAslobType" name="CAslob"/>
+      <xs:element type="CCoverageType" name="CCoverage"/>
+      <xs:element type="CCoverageCodeType" name="CCoverageCode"/>
+      <xs:element type="CCoveragePartCodeType" name="CCoveragePartCode"/>
+      <xs:element type="CCoveragePartNameType" name="CCoveragePartName"/>
+      <xs:element type="CCoverageTypeCodeType" name="CCoverageTypeCode"/>
+      <xs:element type="CCoverageTypeNameType" name="CCoverageTypeName"/>
+      <xs:element type="CDesType" name="CDes"/>
+      <xs:element type="CDevFrmSchdledExcessType" name="CDevFrmSchdledExcess"/>
+      <xs:element type="CDevFrmSchdledPrimaryType" name="CDevFrmSchdledPrimary"/>
+      <xs:element type="CDevFrmSchPrimDispType" name="CDevFrmSchPrimDisp"/>
+      <xs:element type="CFinalPremiumType" name="CFinalPremium"/>
+      <xs:element type="CFinalPremDispType" name="CFinalPremDisp"/>
+      <xs:element type="CFullyEarnedType" name="CFullyEarned"/>
+      <xs:element type="CFullyEarnedOverrideType" name="CFullyEarnedOverride"/>
+      <xs:element type="CLobDescriptionType" name="CLobDescription"/>
+      <xs:element type="CManualPremType" name="CManualPrem"/>
+      <xs:element type="CManualPremDispType" name="CManualPremDisp"/>
+      <xs:element type="CPrsDetailTwistyType" name="CPrsDetailTwisty"/>
+      <xs:element type="CPublicQbeEquPremType" name="CPublicQbeEquPrem"/>
+      <xs:element type="CPubQbeEquPremDispType" name="CPubQbeEquPremDisp"/>
+      <xs:element type="CRatedPremType" name="CRatedPrem"/>
+      <xs:element type="CRatedPremDispType" name="CRatedPremDisp"/>
+      <xs:element type="CRatingFormulaType" name="CRatingFormula"/>
+      <xs:element type="CRatingFunctionType" name="CRatingFunction"/>
+      <xs:element type="CSeqType" name="CSeq"/>
+      <xs:element type="CSubLineCodeType" name="CSubLineCode"/>
+      <xs:element type="FullTermPremiumType" name="FullTermPremium"/>
+      <xs:element type="IsCovManuallyRatedType" name="IsCovManuallyRated"/>
+      <xs:element type="IsSubToFullyChargeType" name="IsSubToFullyCharge"/>
+      <xs:element type="IsSubToFullyEarnType" name="IsSubToFullyEarn"/>
+      <xs:element type="LobCodeType" name="LobCode"/>
+      <xs:element type="ProductCodeType" name="ProductCode"/>
+      <xs:element type="RiskStateType" name="RiskState"/>
+      <xs:element type="RiskStateStatCodeType" name="RiskStateStatCode"/>
+      <xs:element type="TransactionPremiumType" name="TransactionPremium"/>
+      <xs:element type="TransPremNotSubToAudType" name="TransPremNotSubToAud"/>
+      <xs:element type="WaivedPremiumType" name="WaivedPremium"/>
+      <xs:element type="WrittenPremiumType" name="WrittenPremium"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated"/>
+    <xs:attribute type="xs:string" name="EntityReference"/>
+    <xs:attribute type="xs:string" name="EntityType"/>
+    <xs:attribute type="xs:int" name="Gid"/>
+    <xs:attribute type="xs:int" name="Id"/>
+    <xs:attribute type="xs:string" name="RefName"/>
+    <xs:attribute type="xs:short" name="RefValue"/>
+    <xs:attribute type="xs:string" name="UserCreated"/>
+  </xs:complexType>
+  <xs:complexType name="MDPremiumSummaryDetailListType">
+    <xs:sequence>
+      <xs:element type="MDPremiumSummaryDetailType" name="MDPremiumSummaryDetail"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MDUnderwritingCommentsType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="DateCreated"/>
+        <xs:attribute type="xs:string" name="EntityReference"/>
+        <xs:attribute type="xs:string" name="EntityType"/>
+        <xs:attribute type="xs:int" name="Gid"/>
+        <xs:attribute type="xs:int" name="Id"/>
+        <xs:attribute type="xs:string" name="RefName"/>
+        <xs:attribute type="xs:short" name="RefValue"/>
+        <xs:attribute type="xs:string" name="UserCreated"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="MDUnderwritingCommentsListType">
+    <xs:sequence>
+      <xs:element type="MDUnderwritingCommentsType" name="MDUnderwritingComments"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MediaLiabilityType">
+    <xs:sequence>
+      <xs:element type="AnnualPremiumType" name="AnnualPremium"/>
+      <xs:element type="BalanceToMinimumType" name="BalanceToMinimum"/>
+      <xs:element type="CommissionablePremiumType" name="CommissionablePremium"/>
+      <xs:element type="CExposureBaseType" name="CExposureBase"/>
+      <xs:element type="CLobDateDesForResetType" name="CLobDateDesForReset"/>
+      <xs:element type="CRiskModifierTypeType" name="CRiskModifierType"/>
+      <xs:element type="FullTermPremiumType" name="FullTermPremium"/>
+      <xs:element type="IsCovManuallyRatedType" name="IsCovManuallyRated"/>
+      <xs:element type="LobCodeType" name="LobCode"/>
+      <xs:element type="ProductCodeType" name="ProductCode"/>
+      <xs:element type="RiskStateType" name="RiskState"/>
+      <xs:element type="TransactionPremiumType" name="TransactionPremium"/>
+      <xs:element type="TransPremNotSubToAudType" name="TransPremNotSubToAud"/>
+      <xs:element type="WaivedPremiumType" name="WaivedPremium"/>
+      <xs:element type="WrittenPremiumType" name="WrittenPremium"/>
+      <xs:element type="MDHeaderInformationListType" name="MDHeaderInformationList"/>
+      <xs:element type="MDExposureInformationListType" name="MDExposureInformationList"/>
+      <xs:element type="MDRiskModifierListType" name="MDRiskModifierList"/>
+      <xs:element type="MDRiskCharacteristicsNonFinancialListType" name="MDRiskCharacteristicsNonFinancialList"/>
+      <xs:element type="MDFinancialAnalysisListType" name="MDFinancialAnalysisList"/>
+      <xs:element type="MDScheduleRatingListType" name="MDScheduleRatingList"/>
+      <xs:element type="MDSignificantTermsAndConditionAdditonalCoverageListType" name="MDSignificantTermsAndConditionAdditonalCoverageList"/>
+      <xs:element type="MDCoverageStructureListType" name="MDCoverageStructureList"/>
+      <xs:element type="MDRatingDetailsListType" name="MDRatingDetailsList"/>
+      <xs:element type="MDPremiumSummaryDetailListType" name="MDPremiumSummaryDetailList"/>
+      <xs:element type="MDUnderwritingCommentsListType" name="MDUnderwritingCommentsList"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated"/>
+    <xs:attribute type="xs:string" name="EntityReference"/>
+    <xs:attribute type="xs:string" name="EntityType"/>
+    <xs:attribute type="xs:short" name="Gid"/>
+    <xs:attribute type="xs:short" name="Id"/>
+    <xs:attribute type="xs:string" name="RefName"/>
+    <xs:attribute type="xs:int" name="RefValue"/>
+    <xs:attribute type="xs:string" name="UserCreated"/>
+  </xs:complexType>
+  <xs:complexType name="MediaLiabilityListType">
+    <xs:sequence>
+      <xs:element type="MediaLiabilityType" name="MediaLiability"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CCreditTermsType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="COverridePolEffDtType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="oldValue"/>
+        <xs:attribute type="xs:dateTime" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CTermDateType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="oldValue"/>
+        <xs:attribute type="xs:dateTime" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="QuoteLetterUWCommentType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="DateCreated"/>
+        <xs:attribute type="xs:string" name="EntityReference"/>
+        <xs:attribute type="xs:string" name="EntityType"/>
+        <xs:attribute type="xs:int" name="Gid"/>
+        <xs:attribute type="xs:int" name="Id"/>
+        <xs:attribute type="xs:string" name="RefName"/>
+        <xs:attribute type="xs:int" name="RefValue"/>
+        <xs:attribute type="xs:string" name="UserCreated"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="QuoteLetterUWCommentListType">
+    <xs:sequence>
+      <xs:element type="QuoteLetterUWCommentType" name="QuoteLetterUWComment"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SubjectivitiesType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="DateCreated"/>
+        <xs:attribute type="xs:string" name="EntityReference"/>
+        <xs:attribute type="xs:string" name="EntityType"/>
+        <xs:attribute type="xs:int" name="Gid"/>
+        <xs:attribute type="xs:int" name="Id"/>
+        <xs:attribute type="xs:string" name="RefName"/>
+        <xs:attribute type="xs:int" name="RefValue"/>
+        <xs:attribute type="xs:string" name="UserCreated"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="SubjectivitiesListType">
+    <xs:sequence>
+      <xs:element type="SubjectivitiesType" name="Subjectivities"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="QuoteUWCommentsType">
+    <xs:sequence>
+      <xs:element type="CCreditTermsType" name="CCreditTerms"/>
+      <xs:element type="COverridePolEffDtType" name="COverridePolEffDt"/>
+      <xs:element type="CTermDateType" name="CTermDate"/>
+      <xs:element type="QuoteLetterUWCommentListType" name="QuoteLetterUWCommentList"/>
+      <xs:element type="SubjectivitiesListType" name="SubjectivitiesList"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated"/>
+    <xs:attribute type="xs:string" name="EntityReference"/>
+    <xs:attribute type="xs:string" name="EntityType"/>
+    <xs:attribute type="xs:int" name="Gid"/>
+    <xs:attribute type="xs:int" name="Id"/>
+    <xs:attribute type="xs:string" name="RefName"/>
+    <xs:attribute type="xs:int" name="RefValue"/>
+    <xs:attribute type="xs:string" name="UserCreated"/>
+  </xs:complexType>
+  <xs:complexType name="QuoteUWCommentsListType">
+    <xs:sequence>
+      <xs:element type="QuoteUWCommentsType" name="QuoteUWComments"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MLPLType">
+    <xs:sequence>
+      <xs:element type="AnnualPremiumType" name="AnnualPremium"/>
+      <xs:element type="BalanceToMinimumType" name="BalanceToMinimum"/>
+      <xs:element type="CommissionablePremiumType" name="CommissionablePremium"/>
+      <xs:element type="CAggregateLmtType" name="CAggregateLmt"/>
+      <xs:element type="CCovAggLimitType" name="CCovAggLimit"/>
+      <xs:element type="CCovProfAggLimitType" name="CCovProfAggLimit"/>
+      <xs:element type="CCovSelOverPpDateType" name="CCovSelOverPpDate"/>
+      <xs:element type="CCovSelRetroDateType" name="CCovSelRetroDate"/>
+      <xs:element type="CErpPerOfAnnPremType" name="CErpPerOfAnnPrem"/>
+      <xs:element type="CExtReportingPeriodType" name="CExtReportingPeriod"/>
+      <xs:element type="CFullyEarnedSumType" name="CFullyEarnedSum"/>
+      <xs:element type="CHasLobCcType" name="CHasLobCc"/>
+      <xs:element type="CHasLobClType" name="CHasLobCl"/>
+      <xs:element type="CHasLobDoType" name="CHasLobDo"/>
+      <xs:element type="CHasLobEpType" name="CHasLobEp"/>
+      <xs:element type="CHasLobFbType" name="CHasLobFb"/>
+      <xs:element type="CHasLobFdType" name="CHasLobFd"/>
+      <xs:element type="CHasLobFiType" name="CHasLobFi"/>
+      <xs:element type="CHasLobMdType" name="CHasLobMd"/>
+      <xs:element type="CHasLobMlType" name="CHasLobMl"/>
+      <xs:element type="CHasLobPnType" name="CHasLobPn"/>
+      <xs:element type="CHasLobTcType" name="CHasLobTc"/>
+      <xs:element type="CIsOverrideDefaultsType" name="CIsOverrideDefaults"/>
+      <xs:element type="CLimitTypeType" name="CLimitType"/>
+      <xs:element type="CLobDateDesForResetType" name="CLobDateDesForReset"/>
+      <xs:element type="CMlplPolicyTypeType" name="CMlplPolicyType"/>
+      <xs:element type="CPendingOrProceedDateType" name="CPendingOrProceedDate"/>
+      <xs:element type="CPrimaryCovForRateType" name="CPrimaryCovForRate"/>
+      <xs:element type="CProfAggLmtType" name="CProfAggLmt"/>
+      <xs:element type="CRetroDateType" name="CRetroDate"/>
+      <xs:element type="CSeparateOrSharedLmtType" name="CSeparateOrSharedLmt"/>
+      <xs:element type="CStateCodeOfDomicileType" name="CStateCodeOfDomicile"/>
+      <xs:element type="CStateDescOfDomicileType" name="CStateDescOfDomicile"/>
+      <xs:element type="FullTermPremiumType" name="FullTermPremium"/>
+      <xs:element type="IsCovManuallyRatedType" name="IsCovManuallyRated"/>
+      <xs:element type="ProductCodeType" name="ProductCode"/>
+      <xs:element type="RiskStateType" name="RiskState"/>
+      <xs:element type="TransactionPremiumType" name="TransactionPremium"/>
+      <xs:element type="TransPremNotSubToAudType" name="TransPremNotSubToAud"/>
+      <xs:element type="WaivedPremiumType" name="WaivedPremium"/>
+      <xs:element type="WrittenPremiumType" name="WrittenPremium"/>
+      <xs:element type="MLPLLinesOfBusinessListType" name="MLPLLinesOfBusinessList"/>
+      <xs:element type="MLPLGeneralInformationListType" name="MLPLGeneralInformationList"/>
+      <xs:element type="MediaLiabilityListType" name="MediaLiabilityList"/>
+      <xs:element type="QuoteUWCommentsListType" name="QuoteUWCommentsList"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated"/>
+    <xs:attribute type="xs:string" name="EntityReference"/>
+    <xs:attribute type="xs:string" name="EntityType"/>
+    <xs:attribute type="xs:int" name="Gid"/>
+    <xs:attribute type="xs:int" name="Id"/>
+    <xs:attribute type="xs:string" name="RefName"/>
+    <xs:attribute type="xs:int" name="RefValue"/>
+    <xs:attribute type="xs:string" name="UserCreated"/>
+  </xs:complexType>
+  <xs:complexType name="ProductType">
+    <xs:sequence>
+      <xs:element type="MLPLType" name="MLPL"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PolicyReferenceType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="InstallmentIdType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="DisplayInstallmentIdType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PaymentPlanIdType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AmountType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:float" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="DueDateType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="SendDateType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PaymentPlanDescriptionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="SurchargeAssessAmountType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="DateCreatedType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="value" use="optional"/>
+        <xs:attribute type="xs:dateTime" name="oldValue" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="UserCreatedType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+        <xs:attribute type="xs:string" name="oldValue" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PaymentPlanCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="InstallmentType">
+    <xs:sequence>
+      <xs:element type="PolicyReferenceType" name="PolicyReference"/>
+      <xs:element type="InstallmentIdType" name="InstallmentId"/>
+      <xs:element type="DisplayInstallmentIdType" name="DisplayInstallmentId"/>
+      <xs:element type="PaymentPlanIdType" name="PaymentPlanId"/>
+      <xs:element type="AmountType" name="Amount"/>
+      <xs:element type="DueDateType" name="DueDate"/>
+      <xs:element type="SendDateType" name="SendDate"/>
+      <xs:element type="PaymentPlanDescriptionType" name="PaymentPlanDescription"/>
+      <xs:element type="SurchargeAssessAmountType" name="SurchargeAssessAmount"/>
+      <xs:element type="DateCreatedType" name="DateCreated"/>
+      <xs:element type="UserCreatedType" name="UserCreated"/>
+      <xs:element type="PaymentPlanCodeType" name="PaymentPlanCode"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="InstallmentListType">
+    <xs:sequence>
+      <xs:element type="InstallmentType" name="Installment"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BillTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ValidPayOptionIdType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="BillCollectionMethodIdType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:short" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CCollectorMethodCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ChangedPremiumType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:short" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ChangedCommPremiumType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:short" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PayorTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PayorIdType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PayorNameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PayorAddress1Type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PayorAddress2Type">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PayorCityType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PayorStateType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PayorZipType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:short" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PayorPhoneType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="DateModifiedType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PolicyFinancialType">
+    <xs:sequence>
+      <xs:element type="PolicyReferenceType" name="PolicyReference"/>
+      <xs:element type="StateCodeType" name="StateCode"/>
+      <xs:element type="BillTypeType" name="BillType"/>
+      <xs:element type="ValidPayOptionIdType" name="ValidPayOptionId"/>
+      <xs:element type="BillCollectionMethodIdType" name="BillCollectionMethodId"/>
+      <xs:element type="CCollectorMethodCodeType" name="CCollectorMethodCode"/>
+      <xs:element type="ChangedPremiumType" name="ChangedPremium"/>
+      <xs:element type="ChangedCommPremiumType" name="ChangedCommPremium"/>
+      <xs:element type="FullTermPremiumType" name="FullTermPremium"/>
+      <xs:element type="PayorTypeType" name="PayorType"/>
+      <xs:element type="PayorIdType" name="PayorId"/>
+      <xs:element type="PayorNameType" name="PayorName"/>
+      <xs:element type="PayorAddress1Type" name="PayorAddress1"/>
+      <xs:element type="PayorAddress2Type" name="PayorAddress2"/>
+      <xs:element type="PayorCityType" name="PayorCity"/>
+      <xs:element type="PayorStateType" name="PayorState"/>
+      <xs:element type="PayorZipType" name="PayorZip"/>
+      <xs:element type="PayorPhoneType" name="PayorPhone"/>
+      <xs:element type="DateCreatedType" name="DateCreated"/>
+      <xs:element type="UserCreatedType" name="UserCreated"/>
+      <xs:element type="DateModifiedType" name="DateModified"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PolicyFinancialListType">
+    <xs:sequence>
+      <xs:element type="PolicyFinancialType" name="PolicyFinancial"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IdType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="oldValue"/>
+        <xs:attribute type="xs:int" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CommPlanIdType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CommPlanNameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CommPlanDescType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CommPlanCommType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="IsCommPlanPercentType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="oldValue"/>
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="NetCommissionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:float" name="oldValue"/>
+        <xs:attribute type="xs:float" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="IsCommPlanTiredType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="oldValue"/>
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="UserModifiedType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CommissionListType">
+    <xs:sequence>
+      <xs:element type="CommissionType" name="Commission"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CoveragePartReferenceType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:long" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="FormnumberType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="FormEditiondateType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="UserDeleteOverrideType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ManualAttachType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="EntityTypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="RankType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:short" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="IncludeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="dateCreatedType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="dateModifiedType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:dateTime" name="value" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="FormType">
+    <xs:sequence>
+      <xs:element type="PolicyReferenceType" name="PolicyReference"/>
+      <xs:element type="CoveragePartReferenceType" name="CoveragePartReference"/>
+      <xs:element type="FormnumberType" name="Formnumber"/>
+      <xs:element type="FormEditiondateType" name="FormEditiondate"/>
+      <xs:element type="UserDeleteOverrideType" name="UserDeleteOverride"/>
+      <xs:element type="ManualAttachType" name="ManualAttach"/>
+      <xs:element type="EntityTypeType" name="EntityType"/>
+      <xs:element type="RankType" name="Rank"/>
+      <xs:element type="IncludeType" name="Include"/>
+      <xs:element type="dateCreatedType" name="dateCreated"/>
+      <xs:element type="dateModifiedType" name="dateModified"/>
+      <xs:element type="UserCreatedType" name="UserCreated"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="AuditFlag" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="FormListType">
+    <xs:sequence>
+      <xs:element type="FormType" name="Form" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RulesetExecIdType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:int" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="RulesetIdType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ActionStatusType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ActionDescType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="UserRemarksType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="RulesetType">
+    <xs:sequence>
+      <xs:element type="PolicyReferenceType" name="PolicyReference"/>
+      <xs:element type="EntityTypeType" name="EntityType"/>
+      <xs:element type="RulesetExecIdType" name="RulesetExecId"/>
+      <xs:element type="RulesetIdType" name="RulesetId"/>
+      <xs:element type="ActionStatusType" name="ActionStatus"/>
+      <xs:element type="ActionDescType" name="ActionDesc"/>
+      <xs:element type="UserRemarksType" name="UserRemarks"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RulesetListType">
+    <xs:sequence>
+      <xs:element type="RulesetType" name="Ruleset"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StatusType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="value"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="EntityStatusType">
+    <xs:sequence>
+      <xs:element type="PolicyReferenceType" name="PolicyReference"/>
+      <xs:element type="StatusType" name="Status"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EntityStatusListType">
+    <xs:sequence>
+      <xs:element type="EntityStatusType" name="EntityStatus"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="QuotePolicyType">
+    <xs:sequence>
+      <xs:element type="AnnualPremiumType" name="AnnualPremium"/>
+      <xs:element type="BalanceToMinimumType" name="BalanceToMinimum"/>
+      <xs:element type="BinderFlagType" name="BinderFlag"/>
+      <xs:element type="BookingDateType" name="BookingDate"/>
+      <xs:element type="BookingStatusType" name="BookingStatus"/>
+      <xs:element type="BookingUserType" name="BookingUser"/>
+      <xs:element type="CanWaivePremiumType" name="CanWaivePremium"/>
+      <xs:element type="CommissionablePremiumType" name="CommissionablePremium"/>
+      <xs:element type="CompanyCodeType" name="CompanyCode"/>
+      <xs:element type="CompanyNameType" name="CompanyName"/>
+      <xs:element type="CompositeRatingType" name="CompositeRating"/>
+      <xs:element type="ControlDateType" name="ControlDate"/>
+      <xs:element type="CustomPackVersionType" name="CustomPackVersion"/>
+      <xs:element type="CustomPolicyNumberType" name="CustomPolicyNumber"/>
+      <xs:element type="CustomRevisionNumberType" name="CustomRevisionNumber"/>
+      <xs:element type="CEffectiveDateFlagType" name="CEffectiveDateFlag"/>
+      <xs:element type="CExpirationDateFlagType" name="CExpirationDateFlag"/>
+      <xs:element type="CFullyEarnedType" name="CFullyEarned"/>
+      <xs:element type="COpportunityIdType" name="COpportunityId"/>
+      <xs:element type="CPaperTypeDescType" name="CPaperTypeDesc"/>
+      <xs:element type="CPremCategoryType" name="CPremCategory"/>
+      <xs:element type="CRenwlIndCodeType" name="CRenwlIndCode"/>
+      <xs:element type="CTailDateFlagType" name="CTailDateFlag"/>
+      <xs:element type="CTailDtType" name="CTailDt"/>
+      <xs:element type="DisplayPolicyNumberType" name="DisplayPolicyNumber"/>
+      <xs:element type="EffectiveDateType" name="EffectiveDate"/>
+      <xs:element type="ExpirationDateType" name="ExpirationDate"/>
+      <xs:element type="FullTermPremiumType" name="FullTermPremium"/>
+      <xs:element type="IsComReductType" name="IsComReduct"/>
+      <xs:element type="IsCovManuallyRatedType" name="IsCovManuallyRated"/>
+      <xs:element type="IsCovProratedType" name="IsCovProrated"/>
+      <xs:element type="IsRebindType" name="IsRebind"/>
+      <xs:element type="IsRewriteType" name="IsRewrite"/>
+      <xs:element type="IsSubjectToAuditType" name="IsSubjectToAudit"/>
+      <xs:element type="MarketGroupDescriptionType" name="MarketGroupDescription"/>
+      <xs:element type="MarketSegmentCodeType" name="MarketSegmentCode"/>
+      <xs:element type="MasterQuoteType" name="MasterQuote"/>
+      <xs:element type="MicVersionType" name="MicVersion"/>
+      <xs:element type="NewEntityReferenceType" name="NewEntityReference"/>
+      <xs:element type="NewEntityTypeType" name="NewEntityType"/>
+      <xs:element type="NextGenAuditedType" name="NextGenAudited"/>
+      <xs:element type="NoConflictOnRollfwdType" name="NoConflictOnRollfwd"/>
+      <xs:element type="OldEntityReferenceType" name="OldEntityReference"/>
+      <xs:element type="OldEntityTypeType" name="OldEntityType"/>
+      <xs:element type="OnDemandReorderType" name="OnDemandReorder"/>
+      <xs:element type="OoseVoidIndicatorType" name="OoseVoidIndicator"/>
+      <xs:element type="OrgEntityReferenceType" name="OrgEntityReference"/>
+      <xs:element type="PaperTypeType" name="PaperType"/>
+      <xs:element type="PolicyNumberType" name="PolicyNumber"/>
+      <xs:element type="PolicyQuoteIndicatorType" name="PolicyQuoteIndicator"/>
+      <xs:element type="ProductCodeType" name="ProductCode"/>
+      <xs:element type="ProductNameType" name="ProductName"/>
+      <xs:element type="ProductVersionType" name="ProductVersion"/>
+      <xs:element type="RateClickedType" name="RateClicked"/>
+      <xs:element type="RatingModeType" name="RatingMode"/>
+      <xs:element type="RenewalType" name="Renewal"/>
+      <xs:element type="RenewalCounterType" name="RenewalCounter"/>
+      <xs:element type="RenewalCounter2Type" name="RenewalCounter2"/>
+      <xs:element type="RenewalIndicatorType" name="RenewalIndicator"/>
+      <xs:element type="RetainBtmFltEndrType" name="RetainBtmFltEndr"/>
+      <xs:element type="RevisionNumberType" name="RevisionNumber"/>
+      <xs:element type="RiskStateType" name="RiskState"/>
+      <xs:element type="RiskStateStatCodeType" name="RiskStateStatCode"/>
+      <xs:element type="SourceSystemType" name="SourceSystem"/>
+      <xs:element type="TotalAnnualColFeeType" name="TotalAnnualColFee"/>
+      <xs:element type="TotalAnnualFeeType" name="TotalAnnualFee"/>
+      <xs:element type="TotalAnnualSurchargeType" name="TotalAnnualSurcharge"/>
+      <xs:element type="TotalAnnualTaxType" name="TotalAnnualTax"/>
+      <xs:element type="TotalFtermColFeeType" name="TotalFtermColFee"/>
+      <xs:element type="TotalFtermFeeType" name="TotalFtermFee"/>
+      <xs:element type="TotalFtermSurchargeType" name="TotalFtermSurcharge"/>
+      <xs:element type="TotalFtermTaxesType" name="TotalFtermTaxes"/>
+      <xs:element type="TotalSurchargeType" name="TotalSurcharge"/>
+      <xs:element type="TotalSurchargeFtermType" name="TotalSurchargeFterm"/>
+      <xs:element type="TotalTransSurchargeType" name="TotalTransSurcharge"/>
+      <xs:element type="TransactionActionType" name="TransactionAction"/>
+      <xs:element type="TransactionCodeType" name="TransactionCode"/>
+      <xs:element type="TransactionFactorType" name="TransactionFactor"/>
+      <xs:element type="TransactionPremiumType" name="TransactionPremium"/>
+      <xs:element type="TransAccountingDateType" name="TransAccountingDate"/>
+      <xs:element type="TransAccountingMonthType" name="TransAccountingMonth"/>
+      <xs:element type="TransAccountingYearType" name="TransAccountingYear"/>
+      <xs:element type="TransDisplayNameType" name="TransDisplayName"/>
+      <xs:element type="TransEffectiveDateType" name="TransEffectiveDate"/>
+      <xs:element type="TransPremNotSubToAudType" name="TransPremNotSubToAud"/>
+      <xs:element type="UnderwriterCodeType" name="UnderwriterCode"/>
+      <xs:element type="UnderwriterNameType" name="UnderwriterName"/>
+      <xs:element type="WaivedPremiumType" name="WaivedPremium"/>
+      <xs:element type="WaivePremiumType" name="WaivePremium"/>
+      <xs:element type="WrittenPremiumType" name="WrittenPremium"/>
+      <xs:element type="PolicyUnderwriterListType" name="PolicyUnderwriterList"/>
+      <xs:element type="InsuredListType" name="InsuredList"/>
+      <xs:element type="ProducerListType" name="ProducerList"/>
+      <xs:element type="QBPolicyDynamicFormDataListType" name="QBPolicyDynamicFormDataList"/>
+      <xs:element type="ProductType" name="Product"/>
+      <xs:element type="InstallmentListType" name="InstallmentList"/>
+      <xs:element type="PolicyFinancialListType" name="PolicyFinancialList"/>
+      <xs:element type="CommissionListType" name="CommissionList"/>
+      <xs:element type="FormListType" name="FormList"/>
+      <xs:element type="RulesetListType" name="RulesetList"/>
+      <xs:element type="EntityStatusListType" name="EntityStatusList"/>
+    </xs:sequence>
+    <xs:attribute type="xs:dateTime" name="DateCreated"/>
+    <xs:attribute type="xs:dateTime" name="DateModified"/>
+    <xs:attribute type="xs:string" name="EntityReference"/>
+    <xs:attribute type="xs:string" name="EntityType"/>
+    <xs:attribute type="xs:int" name="Gid"/>
+    <xs:attribute type="xs:int" name="Id"/>
+    <xs:attribute type="xs:string" name="IsLocked"/>
+    <xs:attribute type="xs:string" name="UserCreated"/>
+    <xs:attribute type="xs:string" name="UserModified"/>
+  </xs:complexType>
+  <xs:complexType name="QuotePolicyListType">
+    <xs:sequence>
+      <xs:element type="QuotePolicyType" name="QuotePolicy"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
