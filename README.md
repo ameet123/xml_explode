@@ -1,8 +1,9 @@
 ## Parse XML
-#### Problem:
+#### Objective:
 We are given a deeply nested XML file and wish to unravel its structure.
 The end goal is to extract individual pieces into various formats.
 Some parts may come out as CSV, while others may be in specialized formats such as 'Parquet'.
+Convert XML to  *AVRO* and ensure that we can read the AVRO file.
 
 #### Approach:
 ![class](image/class.png)
@@ -60,3 +61,7 @@ classes with *XMLElementRef*. Removing this generates *XMLElement*
 
 #### AVRO Generation.
 This project uses `jackson-dataformat-avro` for schema generation.
+
+#### AVRO READ/WRITE
+Note: Had to add `@XmlRootElement(name="QuotePolicyList")` to the main outer class.
+Added 2 tests for READ and WRITE of AVRO data.
