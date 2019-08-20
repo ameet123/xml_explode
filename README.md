@@ -47,3 +47,16 @@ The deserialization of XML file is also performed using **JAXB**. The basic proc
                     (QuotePolicyListType) JAXBIntrospector.getValue(jaxbUnmarshaller.unmarshal(new File(XML_FILE)));
     ```
     The JAXBIntrospector is used since there is no `XMLRoot` element. And `QuotePolicyListType` is the outermost class.
+
+#### XSD Generation
+During XSD generation, we find that property name is nested in 'CommissionType'. 
+This can cause issues. It causes JAXB to use *XMLElementRef* rather than *XMLElement*.
+This creates issues for AVRO Schema generation. As such we need to fix these issues,
++ Value - attribute by this name causes conflict. Although there are ways to get around it, it was cumbersome. 
+At the moment, I changed the *Value* to *curValue*.
++ DateModified/DateCreated - This is duplicated with change of case in first letter. fixed that to be uniform.
++ CommissionType - in the generated XSD, this type had a `mixed` tag, which was causing JAXB to generate 
+classes with *XMLElementRef*. Removing this generates *XMLElement*
+
+#### AVRO Generation.
+This project uses `jackson-dataformat-avro` for schema generation.
