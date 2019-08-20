@@ -1,0 +1,8 @@
+graph TD
+A[XML File] -->|XSD Generator| B(XSD)
+B --> C[fas:fa-tasks XJC Task ]
+
+C -->|generate| D(fas:fa-sitemap POJO Vanetian Blind)
+A-->|unmarshal|E(fas:fa-object-ungroup POJO Instances)
+E-->F(fas:fa-walking CSV Bean)
+F --> G(fas:fa-edit Write)
